@@ -18,6 +18,7 @@ module.exports = function (app) {
   app.use(
     "/api2",
     createProxyMiddleware({
+      // s
       target: "https://localhost:8081/api/",
       changeOrigin: true,
       secure: false, // Disable SSL certificate checking for development
